@@ -1,0 +1,27 @@
+.playlist-cont{
+    width: 100%;
+    /* background: #000; */
+  height: 200px;
+ 
+}
+.playlist-cont .playlist-head{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 12px;
+}
+
+.playlist-cont .playlist-head h2{
+  font-size: 32px;
+}
+
+.playlist-cont .playlist-head button {
+  border: none;
+  font-size: 18px;
+  background: none;
+
+}
+.playlist-cont .music-list{
+   overflow-y: scroll;
+  overflow-x: hidden;
+    scroll-behavior: smooth;
+}

@@ -1,0 +1,70 @@
+
+/* Trend Component */
+.trend_cont{
+    width: 100%;
+    position: relative;
+    padding: 2px;
+}
+.trend_cont .trend_head {
+    display: flex;
+    justify-content: space-between;
+
+}
+.trend_cont .trend_head h4{
+    color: blue;
+}
+
+.trend_cont .trend_head button {
+    border: none;
+    width: 80px;
+    align-self: end;
+    background: none;
+}
+
+
+.trend_cont .trend-card{
+    width: 100%;
+    height: 180px;
+    margin-bottom: .5rem;
+     
+}
+
+.trend_cont .trend-card .trend-card-cont{
+    margin-top: 10px;
+    padding: 16px 18px;
+    
+    border-radius: 10px;
+    background: linear-gradient(to right, yellow ,red );
+
+
+}
+
+.trend_cont .trend-card .trend-card-cont h4{
+    line-height:1.4;
+    font-size: 14px;
+    margin-top: 1px;
+    color: green;
+}
+.trend_cont .trend-card .trend-card-cont h2{
+
+    font-size: 24px;
+    line-height: 1.6;
+}
+
+.trend_cont .trend-card .trend-card-cont button {
+    margin-top: 8px;
+    width: 130px;
+    padding: 4px;
+    border-radius: 18px;
+    border: 2px solid;
+    font-size: 1.3rem;
+    flex-wrap: no-wrap;
+}
+
+.trend_cont .trend-card .trend-card-cont button.play-btn{
+    width: 90px;
+    background: #000;
+    color: white;
+    border: none;
+    margin-right: 6px;
+}

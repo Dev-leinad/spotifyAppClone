@@ -1,0 +1,28 @@
+
+form {
+    width: 100%;
+}
+.form-cont{
+    display: flex;
+    margin-left: auto;
+    /* float: right; */
+    width: 500px;
+    background-color: #fff;
+    margin-top: 10px;
+    padding: .3rem;
+    border-radius:20px;
+}
+
+.form-cont .search-icon{
+    width:8%;
+    position: relative;
+    font-size: 22px;
+    margin: 2px 0px;
+}
+
+.form-cont input {
+    border: none;
+    outline: none;
+    width: 100%;
+    /* padding: 2px; */
+}

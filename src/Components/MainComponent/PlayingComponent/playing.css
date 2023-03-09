@@ -1,0 +1,81 @@
+.playingcont {
+    width: 93%;
+    margin: 0   auto;
+    position: absolute;
+    height: 90px;
+    bottom: 20px;
+    background-color: #ffffff;
+    display: block;
+    border-radius: 10px;
+}
+
+.control-cont{
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    padding: 4px;
+    margin: 9px;
+}
+.fav-option{
+    flex: .14;
+    margin-left:10px ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-controls{
+    /* width: 20%; */
+    display: flex ;
+    flex: .6;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: center;
+}
+.ctl-icon{
+    font-size:18px;
+}
+
+.volume-opt {
+    flex: .2;
+    margin-right: 20px;
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+.vol-range{
+    width:100%;
+    background: #f3f3f9;
+    align-self: center;
+    margin: 0px 6px 2px;
+    padding: 2px;
+
+}
+
+/* track duration styling  */
+
+.track-duration{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px;
+    /* justify-content: space-around; */
+}
+.dur-cont{
+    width: 70%;
+    background:#f3f3f9;
+    margin: 0px auto;
+    border-radius: 4px;
+    position: relative;
+}
+.line {
+    width: 50%;
+    background: #000;
+    padding: 2px;
+}
+.track-duration p.start-time{
+    margin-left: 16px;
+}
+.track-duration p.end-time{
+    margin-right: 18px;
+}
