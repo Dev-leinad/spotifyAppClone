@@ -32,7 +32,7 @@
 .trend_cont .trend-card .trend-card-cont{
     margin-top: 10px;
     padding: 16px 18px;
-    
+    /* background-image: url('https://images.pexels.com/photos/3799312/pexels-photo-3799312.jpeg?auto=compress&cs=tinysrgb&w=600'); */
     border-radius: 10px;
     background: linear-gradient(to right, yellow ,red );
 
@@ -52,7 +52,7 @@
 }
 
 .trend_cont .trend-card .trend-card-cont button {
-    margin-top: 8px;
+    margin-top: 8px; 
     width: 130px;
     padding: 4px;
     border-radius: 18px;

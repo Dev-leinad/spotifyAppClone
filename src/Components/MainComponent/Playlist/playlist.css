@@ -1,7 +1,7 @@
 .playlist-cont{
     width: 100%;
-    /* background: #000; */
-  height: 200px;
+    /* background:red; */
+  height: 220px;
  
 }
 .playlist-cont .playlist-head{
@@ -11,17 +11,61 @@
 }
 
 .playlist-cont .playlist-head h2{
-  font-size: 32px;
+  font-size: 28px;
 }
 
 .playlist-cont .playlist-head button {
   border: none;
-  font-size: 18px;
+  font-size: 14px;
   background: none;
 
 }
-.playlist-cont .music-list{
+
+
+table {
+  width: 100%;
+  justify-content: center;
+  text-align: left;
+  padding: 4px 4%;
+  
+  font-size: 18px;
+}
+table thead  {
+  height: 40px;
+  /* background-color: #000; */
+}
+table th {
+  width: 30%;
+  padding: 2px;
+}
+
+table th.ser-num {
+  width:2%;
+  padding: 6px; 
+  color: red;
+}
+table .song-time {
+  width: 2%;
+  min-width: 4%; 
+  color: red;
+  /* padding: 10px; */
+}
+ .music-lists{
    overflow-y: scroll;
   overflow-x: hidden;
     scroll-behavior: smooth;
+    height: 200px;
+    /* background: #000; */
 }
+table .tab-row{
+  height: 34px;
+  /* background: #000; */
+margin: 3px;
+padding: .2rem;
+}
+
+.active {
+  background-color: #000;
+  color: red;
+}
+

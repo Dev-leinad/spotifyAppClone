@@ -2,7 +2,6 @@
     display: none;
 }
 
-*{
-    @import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap');
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-  

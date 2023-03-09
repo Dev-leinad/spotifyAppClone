@@ -1,81 +1,86 @@
-.playingcont {
-    width: 93%;
-    margin: 0   auto;
-    position: absolute;
+.controls-container{
+
+    width: 100%;
+    /* position: absolute; */
+    bottom: 10px;
+    left: 20px;
     height: 90px;
-    bottom: 20px;
-    background-color: #ffffff;
+    background-color: #fff;
     display: block;
-    border-radius: 10px;
+    border-radius: 6px;
+
 }
 
-.control-cont{
-    width: 100%;
+.controls-container .top-buttons-control {
     display: flex;
-    /* justify-content: space-between; */
-    padding: 4px;
-    margin: 9px;
-}
-.fav-option{
-    flex: .14;
-    margin-left:10px ;
-    display: flex;
-    justify-content: space-between;
-}
-
-.play-controls{
-    /* width: 20%; */
-    display: flex ;
-    flex: .6;
-    margin: 0px auto;
-    align-items: center;
-    justify-content: center;
-}
-.ctl-icon{
-    font-size:18px;
-}
-
-.volume-opt {
-    flex: .2;
-    margin-right: 20px;
-    display: flex;
-    position: relative;
-    width: 100%;
-}
-
-.vol-range{
-    width:100%;
-    background: #f3f3f9;
-    align-self: center;
-    margin: 0px 6px 2px;
-    padding: 2px;
-
-}
-
-/* track duration styling  */
-
-.track-duration{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
     padding: 6px;
-    /* justify-content: space-around; */
+    margin: 0px 4%;
+    width: 100%;
 }
-.dur-cont{
-    width: 70%;
-    background:#f3f3f9;
-    margin: 0px auto;
-    border-radius: 4px;
+.controls-container .top-buttons-control .left-controls{
+    width: 15% ;
+    min-width: 10%;
+    margin: 4px 0;
+    align-self: center;
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding: 0 4px;
+}
+
+.controls-container .top-buttons-control .middle-cont-btn{
+    width: 30%;
+    margin-left: 9rem ;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    padding: 6px 0 ;
+}
+
+
+.controls-container .top-buttons-control .middle-cont-btn .play-btn{
+    font-size: 34px;
+    margin: 0 4px;
+
+}
+
+.controls-container .right-control-btn {
+    display: flex;
+    margin-left: auto;
+    margin-right:36px;
+    align-items: center;
+    font-size: 22px;
+}
+
+.controls-container .right-control-btn .control-range {
+    width: 130px;
+    background: #f4f5fe;
+    padding: 2px;
+    margin: 0 6px ;
     position: relative;
 }
+
 .line {
-    width: 50%;
-    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
     padding: 2px;
+    width: 40%;
+    background:#000;
 }
-.track-duration p.start-time{
-    margin-left: 16px;
+
+.controls-container .song-dura-cont{
+    display: flex;
+    margin: 0 6%;
+    margin-bottom: 30px;
 }
-.track-duration p.end-time{
-    margin-right: 18px;
+
+.track-rang{
+    width: 70%;
+    justify-self: first baseline;
+    margin: auto;
+    padding: 2px;
+    background: #f4f5fe;
+    justify-self: center;
+    position: relative;
 }

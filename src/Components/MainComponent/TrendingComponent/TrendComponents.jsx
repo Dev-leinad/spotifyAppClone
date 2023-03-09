@@ -12,7 +12,7 @@ const TrendComponents = () => {
             <h1>Trending</h1>  
             </div>
             <button>More</button>
-            
+             
         </div>
         <div className="trend-card">
           <div className="trend-card-cont">
