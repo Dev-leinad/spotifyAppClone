@@ -23,7 +23,7 @@ const Widget = () => {
 
     <div className="widgets">
       <h3>Discover</h3>
-    <div className='box active'>
+    <div className='box '>
       <AiFillHome className='bx-icon' />
       <h3> Home</h3>
     </div>

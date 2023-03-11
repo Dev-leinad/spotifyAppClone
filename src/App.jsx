@@ -8,8 +8,10 @@ function App() {
 
   return (
     <div className="App">
+
       
-     <LandingPage />
+      <Spotify />
+     {/* <LandingPage /> */}
     
     </div>
   )
