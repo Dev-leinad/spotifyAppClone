@@ -58,15 +58,11 @@ return (
                     <div> */}
                         {/* <button onClick={() => window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes.join("%20")}`}>
                             Login
-//                         </button> */}<h1>Spotify</h1>
-//                          <a href={AUTH_ENDPOINT + '?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=' + RESPONSE_TYPE}>Login</a>
-//                     </div> :
-// (
-// <LandingPage />)
-                  
-//             }
-</LandingPage />    
-           
+                        </button> */}
+                        
+                      
+            {/* } */}
+           <LandingPage />
         </div>
     </div>
 )
