@@ -12,7 +12,7 @@ export const Spotify = () => {
           
 const  CLIENT_ID = "f3e7e045d3ab40b0b05a5f69fafb3dec";
 
-const REDIRECT_URI = https://leinad-song.netlify.app/
+const REDIRECT_URI = 'http://localhost:5173/'
 
 const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'token'
@@ -52,19 +52,20 @@ return (
 
 
             
-            {
+            {/* {
                    ! token? 
                         
-                    <div>
+                    <div> */}
                         {/* <button onClick={() => window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes.join("%20")}`}>
                             Login
-                        </button> */}<h1>Spotify</h1>
-                         <a href={AUTH_ENDPOINT + '?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=' + RESPONSE_TYPE}>Login</a>
-                    </div> :
-(
-<LandingPage />)
+//                         </button> */}<h1>Spotify</h1>
+//                          <a href={AUTH_ENDPOINT + '?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=' + RESPONSE_TYPE}>Login</a>
+//                     </div> :
+// (
+// <LandingPage />)
                   
-            }
+//             }
+</LandingPage />    
            
         </div>
     </div>
