@@ -12,7 +12,7 @@ export const Spotify = () => {
           
 const  CLIENT_ID = "f3e7e045d3ab40b0b05a5f69fafb3dec";
 
-const REDIRECT_URI = 'http://localhost:5173/'
+const REDIRECT_URI = https://leinad-song.netlify.app/
 
 const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'token'
