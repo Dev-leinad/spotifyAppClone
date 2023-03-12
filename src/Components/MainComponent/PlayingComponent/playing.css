@@ -1,7 +1,7 @@
 .controls-container{
 
-    width: 100%;
-    /* position: absolute; */
+    width: 93%;
+    position: absolute;
     bottom: 10px;
     left: 20px;
     height: 90px;
@@ -70,9 +70,10 @@
 }
 
 .controls-container .song-dura-cont{
+    position: relative;
     display: flex;
     margin: 0 6%;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .track-rang{
@@ -83,4 +84,43 @@
     background: #f4f5fe;
     justify-self: center;
     position: relative;
+}
+
+@media screen  and (max-width: 768px) {
+    .controls-container{
+        bottom: 20px;
+        position: absolute;
+    
+    }
+    .controls-container .top-buttons-control{
+        padding: 4px;
+        margin: 0px 2%;
+    }
+    .controls-container .top-buttons-control .left-controls{
+        margin: 2px 0px;
+        /* min-width: none; */
+        /* width: ; */
+        /* font-size: 30px; */
+    }
+
+
+    .controls-container .top-buttons-control .middle-cont-btn{
+        margin-left: 6rem;
+        /* width: 20%; */
+        padding: 2px;
+        justify-self: center;
+    }
+    
+.controls-container .right-control-btn {
+    /* margin-right: 20px; */
+}
+
+.controls-container .right-control-btn .control-range{
+    width: 50px;
+}
+
+.controls-container .song-dura-cont{
+    margin-top: 10px;
+}
+    
 }

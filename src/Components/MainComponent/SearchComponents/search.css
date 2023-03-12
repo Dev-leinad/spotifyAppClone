@@ -33,4 +33,26 @@ form {
     .form-cont{
         width: 100%;
     } */
+/* } */
+
+@media  (max-width : 768px) {
+    .form-cont{
+        /* background-color: #000; */
+        width: 100%;
+        padding: .14rem;
+        /* margin-top: 6px; */
+        float: none;
+    }
+
+    .form-cont .search-icon{
+        margin-left: 8px;
+        margin-right: 4px;
+        font-size: 14px;
+    }
+
+    .form-cont input::placeholder{
+        font-size: 10px;
+        align-self: center;
+        color: #ccc;
+    }
 }
