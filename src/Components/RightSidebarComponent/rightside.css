@@ -56,7 +56,7 @@
     /* flex-wrap: wrap; */
 }
 .fav-artist-container h3{
-    font-size: 18px;
+    font-size: 16px;
     font-family:'poppins', sans-serif;
     font-weight: 600;
     margin-bottom: 10px;
@@ -98,7 +98,11 @@
     object-fit: cover;
 }
 
-.fav-artist-container .fav-cont .fav-bio {
+.fav-artist-container .fav-cont .fav-bio h4 {
 
+    font-size: 12px;
+}
+
+.fav-artist-container .fav-cont .fav-bio p{
     font-size: 12px;
 }

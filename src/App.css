@@ -49,7 +49,12 @@ body{
     cursor: pointer;
     font-weight: 600;
 }
-
+.trend_cont .trend-card .trend-card-cont{
+    background-image: url('./assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 @media ( max-width:768px ){
     body{
         width: 100%;

@@ -11,7 +11,8 @@
 }
 
 .playlist-cont .playlist-head h2{
-  font-size: 28px;
+  font-size: 25px;
+  line-height: 1.4  ;
 }
 
 .playlist-cont .playlist-head button {

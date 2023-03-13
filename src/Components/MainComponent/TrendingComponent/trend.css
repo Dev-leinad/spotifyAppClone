@@ -35,7 +35,7 @@
 .trend_cont .trend-card .trend-card-cont{
     margin-top: 10px;
     padding: 16px 18px;
-    background-image: url('/spotifyclone/src/assets/bg.jpg');
+    /* background-image: url('/spotifyclone/src/assets/bg.jpg'); */
     border-radius: 10px;
     /* background: linear-gradient(to right, yellow ,red ); */
 
@@ -50,7 +50,7 @@
 }
 .trend_cont .trend-card .trend-card-cont h2{
 
-    font-size: 24px;
+    font-size: 26px;
     line-height: 1.6;
 }
 

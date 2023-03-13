@@ -1,5 +1,6 @@
 import React from 'react'
 import './trend.css'
+
 // import {RxCaretRight }from 'react-icons/Fa'
 
 const TrendComponents = () => {
