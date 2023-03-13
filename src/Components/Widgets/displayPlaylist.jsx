@@ -3,7 +3,7 @@ import {AiFillHome} from 'react-icons/ai'
 import '../SidebarComponent/sidebar.css'
 import axios from "axios";
 import { reducerCases } from '../../utils/Constants';
-import { useStateProvider } from '../../utils/StateProvider';
+import { useStateProvider } from '../../utils/StateProvide';
 
 const DisplayPlayList = () => {
 

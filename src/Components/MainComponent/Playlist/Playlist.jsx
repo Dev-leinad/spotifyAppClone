@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react'
 import './playlist.css'
 import axios from "axios";
 import { reducerCases } from '../../../utils/Constants';
-import { useStateProvider } from '../../../utils/StateProvider';
+import { useStateProvider } from '../../../utils/StateProvide';
 
 
 const Playlist = () => {

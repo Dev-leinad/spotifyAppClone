@@ -3,7 +3,7 @@ import './App.css'
 import LandingPage from './Components/LandingPage'
 
 import { reducerCases } from "./utils/Constants";
-import { useStateProvider } from "./utils/StateProvider";
+import { useStateProvider } from "./utils/StateProvide";
 import { Spotify } from './spotify'
 
 function App() {
