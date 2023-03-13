@@ -83,7 +83,6 @@ border-radius: 10px;
 
 .playlist-box ul{
     height: 200px;
-    /* background: #000; */
     overflow-y: scroll;
 }
 .playlist-box ul li{

@@ -1,6 +1,5 @@
 .playlist-cont{
     width: 100%;
-    /* background:red; */
   height: 220px;
  
 }
@@ -33,7 +32,6 @@ table {
 }
 table thead  {
   height: 40px;
-  /* background-color: #000; */
 }
 table th {
   width: 30%;
@@ -49,18 +47,15 @@ table .song-time {
   width: 2%;
   min-width: 4%; 
   color: red;
-  /* padding: 10px; */
 }
  .music-lists{
    overflow-y: scroll;
   overflow-x: hidden;
     scroll-behavior: smooth;
     height: 200px;
-    /* background: #000; */
 }
 table .tab-row{
   height: 34px;
-  /* background: #000; */
 margin: 3px;
 padding: .2rem;
 }

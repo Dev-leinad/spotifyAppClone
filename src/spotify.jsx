@@ -8,8 +8,6 @@ import {
     redirect,
     RouterProvider,
   } from "react-router-dom";
-// react-router-dom
-// import axios from 'axios';
 import { useEffect, useState } from 'react';
 
 export const Spotify = () => {
@@ -31,46 +29,9 @@ export const Spotify = () => {
         )}&response_type=token&show_dialog=true`;
       };
    
-          
-// const  CLIENT_ID = "f3e7e045d3ab40b0b05a5f69fafb3dec";
-
-// const REDIRECT_URI = 'http://localhost:5173/'
-
-// const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
-// const RESPONSE_TYPE = 'token'
-// const scopes = [
-//     "user-read-playback-state",
-// "user-modify-playback-state",
-// "user-read-currently-playing",
-// "user-read-playback-position",
-// "user-top-read",
-// "user-read-recently-played"
-//   ];
  
-//   window.location.href=${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect=${};
-
-  
-
-// const [token, setToken] = useState("")
 
 
-// useEffect (() =>{
-//     const hash =window.location.hash
-//     let token =window.localStorage.getItem('token')
-
-//     if (!token && hash) {
-//         token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
-
-//         window.location.hash = ""
-//         window.localStorage.setItem("token", token)
-//     }
-
-
-//     setToken(token)
-
-   
-
-// })
 return (
     <>
      <div className='login-cont'>
@@ -86,5 +47,3 @@ return (
 )
  }
 
-
-// export default Spotify
