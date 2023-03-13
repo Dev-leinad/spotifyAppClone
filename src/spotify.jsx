@@ -1,7 +1,11 @@
 import React from 'react'
 import LandingPage from './Components/LandingPage';
+
+
+import MusicPlaylist from './Playlistts/MusicPlaylist'
 import {
     createBrowserRouter,
+    redirect,
     RouterProvider,
   } from "react-router-dom";
 // react-router-dom
@@ -17,10 +21,25 @@ const REDIRECT_URI = 'http://localhost:5173/'
 const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
 const RESPONSE_TYPE = 'token'
 const scopes = [
-    "user-read-currently-playing",
     "user-read-playback-state",
+"user-modify-playback-state",
+"user-read-currently-playing",
+"user-read-playback-position",
+"user-top-read",
+"user-read-recently-played"
   ];
+ 
+//   window.location.href=${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect=${};
 
+  const [state, setState] = useState({
+    accessToken: null,
+    expiresIn: null,
+    tokenType: null,
+    refreshToken: null,
+    userId: null,
+    userName: null,
+    userImage: null,
+  });
 
 const [token, setToken] = useState("")
 
@@ -40,29 +59,41 @@ useEffect (() =>{
     setToken(token)
 
    
- 
+
 })
 return (
     
     <div>
-
+     
         <div>
            
 
 
 
             
-            {/* {
+            {
                    ! token? 
                         
-                    <div> */}
-                        {/* <button onClick={() => window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes.join("%20")}`}>
+                    <div>
+                        <h1>Spotify</h1>
+                        <button onClick={() => window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes.join("%20")}&response_type=token&show_daialog=true `}>
                             Login
-                        </button> */}
+                        </button>
                         
-                      
-            {/* } */}
-           <LandingPage />
+                         {/* <a href={AUTH_ENDPOINT + '?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=' + RESPONSE_TYPE}>Login</a> */}
+                    </div> :
+(
+
+    <>
+    <LandingPage />
+<MusicPlaylist />
+    </>
+
+
+)
+                  
+            }
+           
         </div>
     </div>
 )

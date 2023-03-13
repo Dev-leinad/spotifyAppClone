@@ -1,41 +1,39 @@
 import React from 'react'
+import DisplayPlayList from './displayPlaylist'
 import {AiFillHome} from 'react-icons/ai'
 
 const Widget = () => {
   return (
     <> 
-    <div className="widgets">
-    <div className='box active'>
-      <AiFillHome className='bx-icon' />
-      <h3> Home</h3>
-    </div>
-    <div className='box'>
-      <AiFillHome className='bx-icon' />
-      <h3> Trend</h3>
-    </div>
-    <div className='box'>
-      <AiFillHome className='bx-icon' />
-      <h3> Feed</h3>
-    </div>
+    
+    <div className="widgets"> 
+    <ul className='box'>
+      <li className='active '>
+        <AiFillHome className='bx-icon' />
+         Home
+      </li>
+      <li>
+        <AiFillHome className='bx-icon' />
+         Trend
+      </li>
+      <li>
+        <AiFillHome className='bx-icon' />
+         Feed
+      </li>
+    </ul>
+    
     </div>
 
-    {/* Discover section  */}
+    {/* Playlist Box */}
+    <div>
+         <div className="playlist-box">  
+    <h3>PlayLists</h3>
+    
+<DisplayPlayList />
 
-    <div className="widgets">
-      <h3>Discover</h3>
-    <div className='box '>
-      <AiFillHome className='bx-icon' />
-      <h3> Home</h3>
-    </div>
-    <div className='box'>
-      <AiFillHome className='bx-icon' />
-      <h3> Trend</h3>
-    </div>
-    <div className='box'>
-      <AiFillHome className='bx-icon' />
-      <h3> Feed</h3>
-    </div>
-    </div>
+</div>
+</div>
+
     </>
   )
 }
