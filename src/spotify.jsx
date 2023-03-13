@@ -13,89 +13,76 @@ import {
 import { useEffect, useState } from 'react';
 
 export const Spotify = () => {
+    const handleClick = async() =>{
+        const client_id = "f3e7e045d3ab40b0b05a5f69fafb3dec";
+        const redirect_uri = "http://localhost:5174/";
+        const api_uri = "https://accounts.spotify.com/authorize";
+        const scope = [
+          "user-read-private",
+          "user-read-email",
+          "user-modify-playback-state",
+          "user-read-playback-state",
+          "user-read-currently-playing",
+          "user-read-recently-played",
+          "user-top-read",
+        ];
+        window.location.href = `${api_uri}?client_id=${client_id}&redirect_uri=${redirect_uri}&scope=${scope.join(
+          " "
+        )}&response_type=token&show_dialog=true`;
+      };
+   
           
-const  CLIENT_ID = "f3e7e045d3ab40b0b05a5f69fafb3dec";
+// const  CLIENT_ID = "f3e7e045d3ab40b0b05a5f69fafb3dec";
 
-const REDIRECT_URI = 'http://localhost:5173/'
+// const REDIRECT_URI = 'http://localhost:5173/'
 
-const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
-const RESPONSE_TYPE = 'token'
-const scopes = [
-    "user-read-playback-state",
-"user-modify-playback-state",
-"user-read-currently-playing",
-"user-read-playback-position",
-"user-top-read",
-"user-read-recently-played"
-  ];
+// const AUTH_ENDPOINT ='https://accounts.spotify.com/authorize';
+// const RESPONSE_TYPE = 'token'
+// const scopes = [
+//     "user-read-playback-state",
+// "user-modify-playback-state",
+// "user-read-currently-playing",
+// "user-read-playback-position",
+// "user-top-read",
+// "user-read-recently-played"
+//   ];
  
 //   window.location.href=${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect=${};
 
-  const [state, setState] = useState({
-    accessToken: null,
-    expiresIn: null,
-    tokenType: null,
-    refreshToken: null,
-    userId: null,
-    userName: null,
-    userImage: null,
-  });
+  
 
-const [token, setToken] = useState("")
+// const [token, setToken] = useState("")
 
 
-useEffect (() =>{
-    const hash =window.location.hash
-    let token =window.localStorage.getItem('token')
+// useEffect (() =>{
+//     const hash =window.location.hash
+//     let token =window.localStorage.getItem('token')
 
-    if (!token && hash) {
-        token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
+//     if (!token && hash) {
+//         token = hash.substring(1).split("&").find(elem => elem.startsWith("access_token")).split("=")[1]
 
-        window.location.hash = ""
-        window.localStorage.setItem("token", token)
-    }
+//         window.location.hash = ""
+//         window.localStorage.setItem("token", token)
+//     }
 
 
-    setToken(token)
+//     setToken(token)
 
    
 
-})
+// })
 return (
     
     <div>
-     
-        <div>
-           
-
-
-
-            
-            {
-                   ! token? 
-                        
-                    <div>
-                        <h1>Spotify</h1>
-                        <button onClick={() => window.location.href = `${AUTH_ENDPOINT}?client_id=${CLIENT_ID}&redirect_uri=${REDIRECT_URI}&response_type=${RESPONSE_TYPE}&scope=${scopes.join("%20")}&response_type=token&show_daialog=true `}>
-                            Login
-                        </button>
-                        
-                         {/* <a href={AUTH_ENDPOINT + '?client_id=' + CLIENT_ID + '&redirect_uri=' + REDIRECT_URI + '&response_type=' + RESPONSE_TYPE}>Login</a> */}
-                    </div> :
-(
-
-    <>
-    <LandingPage />
-<MusicPlaylist />
-    </>
-
-
-)
-                  
-            }
-           
-        </div>
+        <img
+        src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png"
+        alt="spotify"
+      />
+     <button onClick={handleClick}>Connect Spotify</button>
+      
     </div>
 )
+ }
 
-}
+
+// export default Spotify
