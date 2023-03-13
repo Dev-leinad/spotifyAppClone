@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react';
 export const Spotify = () => {
     const handleClick = async() =>{
         const client_id = "f3e7e045d3ab40b0b05a5f69fafb3dec";
-        const redirect_uri = "http://localhost:5174/";
+        const redirect_uri = "https://leinad-song.netlify.app/";
         const api_uri = "https://accounts.spotify.com/authorize";
         const scope = [
           "user-read-private",
