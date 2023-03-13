@@ -10,5 +10,5 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <StateProvider initialState={initialState} reducer={reducer}>
       <App />
     </StateProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 )
