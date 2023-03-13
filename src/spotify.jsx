@@ -15,7 +15,7 @@ import { useEffect, useState } from 'react';
 export const Spotify = () => {
     const handleClick = async() =>{
         const client_id = "f3e7e045d3ab40b0b05a5f69fafb3dec";
-        const redirect_uri = "https://leinad-song.netlify.app/";
+        const redirect_uri = "http://localhost:5173/";
         const api_uri = "https://accounts.spotify.com/authorize";
         const scope = [
           "user-read-private",
@@ -72,8 +72,8 @@ export const Spotify = () => {
 
 // })
 return (
-    
-    <div>
+    <>
+     <div className='login-cont'>
         <img
         src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Black.png"
         alt="spotify"
@@ -81,6 +81,8 @@ return (
      <button onClick={handleClick}>Connect Spotify</button>
       
     </div>
+    </>
+   
 )
  }
 
