@@ -2,8 +2,9 @@ import React from 'react'
 // import StateProvider from './utils/StateProvide'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-
-import reducer, { initialState } from "./utils/Reducer";
+import { initialState } from './utils/Reducer'
+import reducer from './utils/Reducer'
+// import reducer, { initialState } from "./utils/Reducer";
 import './index.css'
 import StateProvider from './utils/StateProvide';
 
