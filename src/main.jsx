@@ -1,9 +1,11 @@
 import React from 'react'
+// import StateProvider from './utils/StateProvide'
 import ReactDOM from 'react-dom/client'
 import App from './App'
-import StateProvider from './utils/StateProvide'
+
 import reducer, { initialState } from "./utils/Reducer";
 import './index.css'
+import StateProvider from './utils/StateProvide';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
